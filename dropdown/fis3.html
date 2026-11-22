@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Fisika - Termodinamika</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    <script>
+        fetch("navbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar-placeholder").innerHTML = data;
+            });
+    </script>
+
+    <div class="sidebar">
+        <h3>Daftar Isi</h3>
+        <div class="content">
+            <a href="#section1">Pengertian Termodinamika</a>
+            <a href="#section2">Poin-Poin Penting</a>
+            <a href="#section3">Contoh Soal</a>
+            <a href="#section4">Video Pembelajaran</a>
+            <a href="#section5">Kutipan Inspiratif</a>
+            <a href="#section6">Download Materi</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <h1>Fisika - Termodinamika</h1>
+
+        <section id="section1">
+            <h2 class="justify-align">Pengertian Termodinamika</h2>
+            <p class="left-align">
+                Termodinamika adalah cabang fisika yang mempelajari energi, panas, dan kerja serta hubungan di antara ketiganya. Termodinamika sering dikaitkan dengan hukum-hukum yang mengatur perubahan energi dalam suatu sistem tertutup maupun terbuka.
+            </p>
+            <p class="left-align">
+                Terdapat empat hukum utama dalam termodinamika: Hukum Nol, Hukum Pertama, Hukum Kedua, dan Hukum Ketiga. Setiap hukum tersebut menjelaskan fenomena energi dan entropi yang berbeda.
+            </p>
+            <img src="https://cdn-web.ruangguru.com/landing-pages/assets/hs/hukum%201%20termodinamika.jpg" alt="Gambar Termodinamika" width="500px">
+        </section>
+
+        <section id="section2">
+            <h2 class="justify-align">Poin-Poin Penting dalam Termodinamika</h2>
+            <ul class="left-align">
+                <li>Hukum Nol Termodinamika mendefinisikan konsep suhu dan kesetimbangan termal.</li>
+                <li>Hukum Pertama Termodinamika merupakan hukum kekekalan energi, yang menyatakan bahwa energi tidak dapat diciptakan atau dimusnahkan.</li>
+                <li>Hukum Kedua Termodinamika membahas arah alami perubahan energi dan konsep entropi.</li>
+                <li>Hukum Ketiga Termodinamika berhubungan dengan perilaku sistem saat suhu mendekati nol mutlak.</li>
+            </ul>
+        </section>
+
+        <section id="section3">
+            <h2 class="right-align">Contoh Soal Termodinamika</h2>
+            <p class="justify-align">
+                Sebuah mesin kalor menyerap 500 J energi panas dari reservoir panas dan menghasilkan kerja sebesar 200 J. Hitung efisiensi mesin kalor tersebut!
+            </p>
+            <pre class="example-problem">
+Diketahui:
+Q_in = 500 J
+W_out = 200 J
+
+Efisiensi = (W_out / Q_in) × 100%
+Efisiensi = (200 / 500) × 100%
+Efisiensi = 40%
+            </pre>
+        </section>
+
+        <section id="section4">
+            <h2 class="left-align">Video Pembelajaran Termodinamika</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/KV7Otw-du0Y?si=iAel3FI6qXvi_LVb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="left-align">Video ini memberikan pengenalan mendalam tentang hukum-hukum termodinamika dan penerapannya dalam berbagai situasi.</p>
+        </section>
+
+        <section id="section5">
+            <h2 class="right-align">Kutipan Inspiratif tentang Termodinamika</h2>
+            <blockquote>
+                "Dalam segala proses di alam semesta, hukum-hukum termodinamika menunjukkan bahwa energi selalu berubah bentuk, tetapi tidak pernah hilang." - Rudolf Clausius
+            </blockquote>
+        </section>
+
+        <section id="section6">
+            <h2 class="right-align">Download Materi PDF</h2>
+            <a href="https://pustaka.ut.ac.id/lib/wp-content/uploads/pdfmk/PANG4112-M1.pdf" class="button" download>Download PDF Termodinamika</a>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

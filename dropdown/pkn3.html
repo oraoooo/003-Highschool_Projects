@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PKN - PKN Lanjutan</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    <script>
+        fetch("navbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar-placeholder").innerHTML = data;
+            });
+    </script>
+
+    <div class="sidebar">
+        <h3>Daftar Isi</h3>
+        <div class="content">
+            <a href="#section1">Pengertian PKN Lanjutan</a>
+            <a href="#section2">Poin-Poin Penting</a>
+            <a href="#section3">Contoh Soal</a>
+            <a href="#section4">Video Pembelajaran</a>
+            <a href="#section5">Kutipan Inspiratif</a>
+            <a href="#section6">Download Materi</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <h1>PKN - PKN Lanjutan</h1>
+
+        <section id="section1">
+            <h2 class="justify-align">Pengertian PKN Lanjutan</h2>
+            <p class="left-align">
+                PKN Lanjutan adalah tahap yang lebih mendalam dari Pendidikan Kewarganegaraan yang mencakup kajian tentang sistem politik, konstitusi, hukum internasional, dan peran aktif warga negara dalam demokrasi. Dalam PKN Lanjutan, peserta didik diajarkan untuk lebih memahami peran mereka dalam masyarakat dan bagaimana berpartisipasi secara aktif dalam proses politik dan pengambilan keputusan.
+            </p>
+            <p class="left-align">
+                Melalui pembelajaran ini, peserta didik diharapkan memiliki pemahaman yang lebih baik tentang hak dan kewajiban mereka dalam masyarakat, serta dapat mengembangkan sikap kritis dan beretika dalam menyikapi isu-isu sosial dan politik.
+            </p>
+            <img src="https://perpustakaan.smpn10.semarangkota.go.id/lib/minigalnano/createthumb.php?filename=images/docs/CamScanner_06-10-2022_09.29_52.jpg.jpg&width=200" alt="Gambar PKN Lanjutan" width="500px">
+        </section>
+
+        <section id="section2">
+            <h2 class="justify-align">Poin-Poin Penting dalam PKN Lanjutan</h2>
+            <ul class="left-align">
+                <li>Pemahaman tentang konstitusi dan sistem pemerintahan Indonesia.</li>
+                <li>Peran warga negara dalam demokrasi dan pentingnya partisipasi politik.</li>
+                <li>Pentingnya supremasi hukum dan kesetaraan di hadapan hukum.</li>
+                <li>Kajian tentang hukum internasional dan peran Indonesia dalam hubungan internasional.</li>
+            </ul>
+        </section>
+
+        <section id="section3">
+            <h2 class="right-align">Contoh Soal PKN Lanjutan</h2>
+            <p class="justify-align">
+                Apa peran konstitusi dalam menjaga kestabilan politik dan sosial di Indonesia?
+            </p>
+            <pre class="example-problem">
+Jawaban:
+Konstitusi berfungsi sebagai dasar hukum tertinggi yang mengatur sistem pemerintahan dan hubungan antara lembaga negara serta warga negara. Dengan adanya konstitusi, hak dan kewajiban warga negara dijamin, serta stabilitas politik dan sosial dapat dipertahankan melalui aturan hukum yang adil dan transparan.
+            </pre>
+        </section>
+
+        <section id="section4">
+            <h2 class="left-align">Video Pembelajaran PKN Lanjutan</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/clYhGgQyOp4?si=Cg0bWKTdtbregyf_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="left-align">Video ini menjelaskan konsep lanjutan dalam PKN, seperti peran konstitusi dan pentingnya partisipasi politik yang aktif.</p>
+        </section>
+
+        <section id="section5">
+            <h2 class="right-align">Kutipan Inspiratif tentang PKN Lanjutan</h2>
+            <blockquote>
+                "Kekuatan terbesar sebuah bangsa adalah warga negaranya yang sadar akan hak dan tanggung jawabnya." - Soekarno
+            </blockquote>
+        </section>
+
+        <section id="section6">
+            <h2 class="right-align">Download Materi PDF</h2>
+            <a href="https://static.buku.kemdikbud.go.id/content/pdf/bukuteks/k13/bukusiswa/PPKn%20Kelas%20XI%20BS%20press.pdf" class="button" download>Download PDF PKN Lanjutan</a>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

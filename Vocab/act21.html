@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Educating Psyche</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    <script>
+        fetch("navbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar-placeholder").innerHTML = data;
+            });
+    </script>
+
+    <div class="sidebar">
+        <h3>Side Bar</h3>
+        <div class="content">
+            <a href="#section1">Introduction</a>
+            <a href="#section2">Peripheral Learning</a>
+            <a href="#section3">Suggestopedic Methods</a>
+            <a href="#section4">Follow-up Sessions</a>
+            <a href="#section5">Placebo Effects</a>
+            <a href="#section6">Challenges of Suggestopedia</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <h1>Educating Psyche</h1>
+
+        <section id="section1">
+            <h2 class="justify-align">Introduction</h2>
+            <p class="justify-align">
+                Educating Psyche by Bernie Neville is a book which looks at radical new approaches to learning, describing the effects of emotion, imagination and the unconscious on learning. One theory discussed in the book is that proposed by George Lozanov, which focuses on the power of suggestion.
+            </p>
+        </section>
+
+        <section id="section2">
+            <h2 class="justify-align">Peripheral Learning</h2>
+            <p class="justify-align">
+                Lozanov’s instructional technique is based on the evidence that the connections made in the brain through unconscious processing (which he calls non-specific mental reactivity) are more durable than those made through conscious processing. Besides the laboratory evidence for this, we know from our experience that we often remember what we have perceived peripherally, long after we have forgotten what we set out to learn.
+            </p>
+            <p class="justify-align">
+                If we think of a book we studied months or years ago, we will find it easier to recall peripheral details – the colour, the binding, the typeface, the table at the library where we sat while studying it – than the content on which we were concentrating. If we think of a lecture we listened to with great concentration, we will recall the lecturer’s appearance and mannerisms, our place in the auditorium, the failure of the air-conditioning, much more easily than the ideas we went to learn.
+            </p>
+        </section>
+
+        <section id="section3">
+            <h2 class="justify-align">Suggestopedic Methods</h2>
+            <p class="justify-align">
+                In suggestopedia, consciousness is shifted away from the curriculum to focus on something peripheral. The curriculum then becomes peripheral and is dealt with by the reserve capacity of the brain. The suggestopedic approach to foreign language learning provides a good illustration.
+            </p>
+            <p class="justify-align">
+                In its most recent variant (1980), it consists of the reading of vocabulary and text while the class is listening to music. The first session is in two parts. In the first part, the music is classical (Mozart, Beethoven, Brahms) and the teacher reads the text slowly and solemnly, with attention to the dynamics of the music. The students follow the text in their books.
+            </p>
+        </section>
+
+        <section id="section4">
+            <h2 class="justify-align">Follow-up Sessions</h2>
+            <p class="justify-align">
+                Some hours after the two-part session, there is a follow-up class at which the students are stimulated to recall the material presented. Once again the approach is indirect. The students do not focus their attention on trying to remember the vocabulary, but focus on using the language to communicate (e.g., through games or improvised dramatisations).
+            </p>
+            <p class="justify-align">
+                The teacher’s task is to assist the students to apply what they have learned paraconsciously, and in doing so to make it easily accessible to consciousness. Another difference from conventional teaching is the evidence that students can regularly learn 1000 new words of a foreign language during a suggestopedic session, as well as grammar and idiom.
+            </p>
+        </section>
+
+        <section id="section5">
+            <h2 class="justify-align">Placebo Effects</h2>
+            <p class="justify-align">
+                Hypnosis, yoga, Silva mind-control, religious ceremonies and faith healing are all associated with successful suggestion, but none of their techniques seem to be essential to it. Lozanov acknowledges that the ritual surrounding suggestion in his own system is also a placebo, but maintains that without such a placebo people are unable or afraid to tap the reserve capacity of their brains.
+            </p>
+        </section>
+
+        <section id="section6">
+            <h2 class="justify-align">Challenges of Suggestopedia</h2>
+            <p class="justify-align">
+                While suggestopedia has gained some notoriety through success in the teaching of modern languages, few teachers are able to emulate the spectacular results of Lozanov and his associates. Students often lack the appropriate mindset or the ‘faith’ in the method, as it does not involve the ‘work’ they have learned to believe is essential to learning.
+            </p>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

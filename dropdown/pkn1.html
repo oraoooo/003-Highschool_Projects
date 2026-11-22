@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PKN - Pengantar PKN</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    <script>
+        fetch("navbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar-placeholder").innerHTML = data;
+            });
+    </script>
+
+    <div class="sidebar">
+        <h3>Daftar Isi</h3>
+        <div class="content">
+            <a href="#section1">Pengertian PKN</a>
+            <a href="#section2">Tujuan Pendidikan PKN</a>
+            <a href="#section3">Contoh Soal</a>
+            <a href="#section4">Video Pembelajaran</a>
+            <a href="#section5">Kutipan Inspiratif</a>
+            <a href="#section6">Download Materi</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <h1>PKN - Pengantar PKN</h1>
+
+        <section id="section1">
+            <h2 class="justify-align">Pengertian PKN</h2>
+            <p class="left-align">
+                Pendidikan Kewarganegaraan (PKN) adalah mata pelajaran yang bertujuan untuk membentuk warga negara yang cerdas, aktif, dan berpartisipasi dalam kehidupan berbangsa dan bernegara. Pendidikan ini juga bertujuan untuk menanamkan nilai-nilai moral, kebangsaan, dan kesadaran hukum kepada peserta didik.
+            </p>
+            <p class="left-align">
+                Dalam Pendidikan Kewarganegaraan, peserta didik diajak untuk memahami hak dan kewajiban sebagai warga negara serta mengembangkan sikap demokratis dan bertanggung jawab.
+            </p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGgZNGc8mCABGnJsuw32kOOMODDDac36OOFg&s" alt="Gambar Pengantar PKN" width="500px">
+        </section>
+
+        <section id="section2">
+            <h2 class="justify-align">Tujuan Pendidikan PKN</h2>
+            <ul class="left-align">
+                <li>Menanamkan pemahaman tentang hak dan kewajiban warga negara.</li>
+                <li>Mengembangkan sikap toleransi, tanggung jawab, dan demokrasi dalam kehidupan sehari-hari.</li>
+                <li>Meningkatkan kesadaran akan pentingnya hukum dan peraturan dalam kehidupan bermasyarakat.</li>
+                <li>Membentuk karakter yang berintegritas, jujur, dan berkeadilan.</li>
+            </ul>
+        </section>
+
+        <section id="section3">
+            <h2 class="right-align">Contoh Soal Pengantar PKN</h2>
+            <p class="justify-align">
+                Jelaskan pentingnya pemahaman hak dan kewajiban sebagai warga negara dalam kehidupan berbangsa dan bernegara.
+            </p>
+            <pre class="example-problem">
+Jawaban:
+Pemahaman hak dan kewajiban sebagai warga negara sangat penting untuk menjaga keseimbangan dan harmoni dalam kehidupan berbangsa dan bernegara. Dengan memahami hak, seseorang tahu apa yang boleh dilakukan dan diterima, sedangkan pemahaman kewajiban mengingatkan warga negara tentang peran dan tanggung jawab mereka dalam membangun masyarakat yang adil dan makmur.
+            </pre>
+        </section>
+
+        <section id="section4">
+            <h2 class="left-align">Video Pembelajaran Pengantar PKN</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/FF3bw9ba0a4?si=Cv2nU7BzTVvXSqcw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="left-align">Video ini menjelaskan pengertian dan tujuan dari Pendidikan Kewarganegaraan serta pentingnya kesadaran hukum dalam masyarakat.</p>
+        </section>
+
+        <section id="section5">
+            <h2 class="right-align">Kutipan Inspiratif tentang PKN</h2>
+            <blockquote>
+                "Kewarganegaraan bukan hanya tentang hak, tetapi juga tentang tanggung jawab untuk menjaga dan memperjuangkan nilai-nilai kebangsaan." - John F. Kennedy
+            </blockquote>
+        </section>
+
+        <section id="section6">
+            <h2 class="right-align">Download Materi PDF</h2>
+            <a href="https://pustaka.ut.ac.id/lib/wp-content/uploads/pdfmk/MKDU411102-M1.pdf" class="button" download>Download PDF Pengantar PKN</a>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

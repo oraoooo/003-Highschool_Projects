@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Personal Biography</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    <script>
+        fetch("navbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar-placeholder").innerHTML = data;
+            });
+    </script>
+
+    <section class="biodata-container">
+        <div class="header">
+            <h1>About Me</h1>
+        </div>
+        
+        <div class="biodata-content">
+            <div class="photo">
+                <img style="height: 500" src="Foto Apres 1 copy.JPG" alt="Rainer Evan Rusly's Photo">
+            </div>
+            <div class="info-container">
+                <table class="info">
+                    <tr>
+                        <th>Full Name</th>
+                        <td>Rainer Evan Rusly</td>
+                    </tr>
+                    <tr>
+                        <th>Address</th>
+                        <td>Jalan Kintamani 2, Nomor 34</td>
+                    </tr>
+                    <tr>
+                        <th>Place & Date of Brith</th>
+                        <td>Jakarta, November 11th 2007</td>
+                    </tr>
+                    <tr>
+                        <th>Grade</th>
+                        <td>11</td>
+                    </tr>
+                    <tr>
+                        <th>Absent Number</th>
+                        <td>26</td>
+                    </tr>
+                    <tr>
+                        <th>Hobby</th>
+                        <td>Mendaki Gunung</td>
+                    </tr>
+                    <tr>
+                        <th>Sex</th>
+                        <td>Laki-laki</td>
+                    </tr>
+                    <tr>
+                        <th>School</th>
+                        <td>SMA Kolese Kanisius</td>
+                    </tr>
+                    <tr>
+                        <th>Major</th>
+                        <td>IPA</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

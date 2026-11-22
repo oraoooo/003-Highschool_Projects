@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Diri</title>
+    <link rel="stylesheet" href="about-me-styles.css">
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    <script>
+        fetch("navbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar-placeholder").innerHTML = data;
+            });
+    </script>
+
+    <section class="biodata-container">
+        <div class="header">
+            <h1>Biodata Diri</h1>
+        </div>
+        
+        <div class="biodata-content">
+            <div class="photo">
+                <img src="image.png" alt="Rainer Evan Rusly's Photo">
+            </div>
+            <div class="info-container">
+                <table class="info">
+                    <tr>
+                        <th>Nama Lengkap</th>
+                        <td>Rainer Evan Rusly</td>
+                    </tr>
+                    <tr>
+                        <th>Alamat</th>
+                        <td>Jalan Kintamani 2, Nomor 34</td>
+                    </tr>
+                    <tr>
+                        <th>Tempat/Tanggal Lahir</th>
+                        <td>Jakarta, 11 November 2007</td>
+                    </tr>
+                    <tr>
+                        <th>Kelas</th>
+                        <td>11</td>
+                    </tr>
+                    <tr>
+                        <th>No Absen</th>
+                        <td>26</td>
+                    </tr>
+                    <tr>
+                        <th>Hobi</th>
+                        <td>Mendaki Gunung</td>
+                    </tr>
+                    <tr>
+                        <th>Jenis Kelamin</th>
+                        <td>Laki-laki</td>
+                    </tr>
+                    <tr>
+                        <th>Sekolah</th>
+                        <td>SMA Kolese Kanisius</td>
+                    </tr>
+                    <tr>
+                        <th>Jurusan</th>
+                        <td>IPA</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

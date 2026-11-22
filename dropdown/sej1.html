@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sejarah - Sejarah Kuno</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    <script>
+        fetch("navbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar-placeholder").innerHTML = data;
+            });
+    </script>
+
+    <div class="sidebar">
+        <h3>Daftar Isi</h3>
+        <div class="content">
+            <a href="#section1">Pengertian Sejarah Kuno</a>
+            <a href="#section2">Peradaban Penting</a>
+            <a href="#section3">Contoh Soal</a>
+            <a href="#section4">Video Pembelajaran</a>
+            <a href="#section5">Kutipan Inspiratif</a>
+            <a href="#section6">Download Materi</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <h1>Sejarah - Sejarah Kuno</h1>
+
+        <section id="section1">
+            <h2 class="justify-align">Pengertian Sejarah Kuno</h2>
+            <p class="left-align">
+                Sejarah kuno adalah periode sejarah yang mencakup peristiwa, peradaban, dan budaya manusia dari awal catatan sejarah hingga abad pertengahan. Sejarah kuno mencakup perkembangan awal dari berbagai peradaban seperti Mesopotamia, Mesir Kuno, Yunani, dan Romawi.
+            </p>
+            <p class="left-align">
+                Peradaban kuno memainkan peran penting dalam pembentukan dasar-dasar masyarakat modern saat ini. Mereka berkontribusi dalam hal budaya, ilmu pengetahuan, pemerintahan, serta kemajuan teknologi dan seni.
+            </p>
+            <img src="https://asset-a.grid.id/crop/0x0:0x0/x/photo/2024/01/10/colosseum-romawi-kunojpeg-20240110124949.jpeg" alt="Gambar Sejarah Kuno" width="500px">
+        </section>
+
+        <section id="section2">
+            <h2 class="justify-align">Peradaban Penting dalam Sejarah Kuno</h2>
+            <ul class="left-align">
+                <li>Peradaban Mesopotamia: dikenal sebagai tempat lahirnya peradaban pertama dan penemuan tulisan cuneiform.</li>
+                <li>Peradaban Mesir Kuno: terkenal dengan pembangunan piramida, hieroglif, dan kemajuan ilmu pengobatan.</li>
+                <li>Peradaban Yunani Kuno: berkontribusi pada ilmu pengetahuan, filsafat, seni, dan demokrasi.</li>
+                <li>Peradaban Romawi: memberikan pengaruh besar dalam sistem hukum, arsitektur, dan infrastruktur.</li>
+            </ul>
+        </section>
+
+        <section id="section3">
+            <h2 class="right-align">Contoh Soal Sejarah Kuno</h2>
+            <p class="justify-align">
+                Apa kontribusi terbesar dari Peradaban Yunani Kuno terhadap dunia modern?
+            </p>
+            <pre class="example-problem">
+Jawaban:
+Peradaban Yunani Kuno memberikan kontribusi besar dalam bidang filsafat, demokrasi, ilmu pengetahuan, seni, dan olahraga. Konsep demokrasi, seperti yang dipraktikkan di Athena, menjadi dasar sistem pemerintahan modern di banyak negara.
+            </pre>
+        </section>
+
+        <section id="section4">
+            <h2 class="left-align">Video Pembelajaran Sejarah Kuno</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/t0G8Y5e3esA?si=X0tsFTulYJyTMNmK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="left-align">Video ini memberikan pengenalan tentang berbagai peradaban kuno dan kontribusi mereka terhadap masyarakat modern.</p>
+        </section>
+
+        <section id="section5">
+            <h2 class="right-align">Kutipan Inspiratif tentang Sejarah Kuno</h2>
+            <blockquote>
+                "Belajar sejarah kuno adalah memahami fondasi yang membentuk dunia kita hari ini." - Herodotus
+            </blockquote>
+        </section>
+
+        <section id="section6">
+            <h2 class="right-align">Download Materi PDF</h2>
+            <a href="http://103.44.149.34/elib/assets/buku/Sejarah_dunia_kuno.pdf" class="button" download>Download PDF Sejarah Kuno</a>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

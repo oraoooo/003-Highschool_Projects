@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Fisika - Mekanika</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    <script>
+        fetch("navbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar-placeholder").innerHTML = data;
+            });
+    </script>
+
+    <div class="sidebar">
+        <h3>Daftar Isi</h3>
+        <div class="content">
+            <a href="#section1">Pengertian Mekanika</a>
+            <a href="#section2">Poin-Poin Penting</a>
+            <a href="#section3">Contoh Soal</a>
+            <a href="#section4">Video Pembelajaran</a>
+            <a href="#section5">Kutipan Inspiratif</a>
+            <a href="#section6">Download Materi</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <h1>Fisika - Mekanika</h1>
+
+        <section id="section1">
+            <h2 class="justify-align">Pengertian Mekanika</h2>
+            <p class="left-align">
+                Mekanika adalah cabang fisika yang mempelajari gerak benda serta gaya yang menyebabkannya. Konsep mekanika berkaitan erat dengan pergerakan, gaya, dan energi. Mekanika terdiri dari berbagai bagian penting, seperti kinematika, dinamika, dan statika.
+            </p>
+            <p class="left-align">
+                Kinematika adalah studi tentang gerak tanpa mempertimbangkan gaya yang menyebabkannya, sedangkan dinamika melibatkan analisis gaya yang berperan dalam gerakan. Di sisi lain, statika mempelajari keadaan kesetimbangan, yaitu ketika gaya-gaya yang bekerja pada suatu benda saling meniadakan satu sama lain.
+            </p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1RUk_wHpkTjh4x04VJSbTYDmuJPvw4deFkw&s" alt="Gambar Mekanika" width="500px">
+        </section>
+
+        <section id="section2">
+            <h2 class="justify-align">Poin-Poin Penting dalam Mekanika</h2>
+            <ul class="left-align">
+                <li>Mekanika klasik mencakup konsep dasar seperti kecepatan, percepatan, gaya, dan momentum.</li>
+                <li>Hukum Newton adalah dasar dari mekanika klasik, terdiri dari tiga hukum utama.</li>
+                <li>Gaya normal, gaya gesek, dan gaya gravitasi adalah gaya-gaya yang umum ditemukan dalam studi mekanika.</li>
+                <li>Energi kinetik dan energi potensial merupakan konsep penting yang digunakan untuk menganalisis gerak benda.</li>
+            </ul>
+        </section>
+
+        <section id="section3">
+            <h2 class="right-align">Contoh Soal Mekanika</h2>
+            <p class="justify-align">
+                Sebuah mobil bergerak dengan kecepatan konstan 20 m/s selama 10 detik. Hitung jarak yang ditempuh oleh mobil tersebut!
+            </p>
+            <pre class="example-problem">
+Diketahui:
+Kecepatan (v) = 20 m/s
+Waktu (t) = 10 s
+
+Jarak (s) = v × t
+Jarak = 20 × 10
+Jarak = 200 m
+            </pre>
+        </section>
+
+        <section id="section4">
+            <h2 class="left-align">Video Pembelajaran Mekanika</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/jZvNTIAi78I?si=JiEj6grCHPwKQN2m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="left-align">Video ini menjelaskan tentang konsep dasar mekanika dan aplikasi hukumnya dalam berbagai situasi kehidupan nyata.</p>
+        </section>
+
+        <section id="section5">
+            <h2 class="right-align">Kutipan Inspiratif tentang Mekanika</h2>
+            <blockquote>
+                "Hukum-hukum gerak tidak hanya membentuk dunia fisik, tetapi juga cara kita memahami keteraturan di alam semesta." - Isaac Newton
+            </blockquote>
+        </section>
+
+        <section id="section6">
+            <h2 class="right-align">Download Materi PDF</h2>
+            <a href="http://www.karyailmiah.trisakti.ac.id/uploads/kilmiah/dosen/DIKTAT_FISIKA_MEKANIKA.pdf" class="button" download>Download PDF Mekanika</a>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

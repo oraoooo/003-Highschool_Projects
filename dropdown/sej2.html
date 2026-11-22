@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sejarah - Abad Pertengahan</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    <script>
+        fetch("navbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar-placeholder").innerHTML = data;
+            });
+    </script>
+
+    <div class="sidebar">
+        <h3>Daftar Isi</h3>
+        <div class="content">
+            <a href="#section1">Pengertian Abad Pertengahan</a>
+            <a href="#section2">Poin-Poin Penting</a>
+            <a href="#section3">Contoh Soal</a>
+            <a href="#section4">Video Pembelajaran</a>
+            <a href="#section5">Kutipan Inspiratif</a>
+            <a href="#section6">Download Materi</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <h1>Sejarah - Abad Pertengahan</h1>
+
+        <section id="section1">
+            <h2 class="justify-align">Pengertian Abad Pertengahan</h2>
+            <p class="left-align">
+                Abad Pertengahan adalah periode sejarah di Eropa yang berlangsung dari sekitar abad ke-5 hingga abad ke-15. Periode ini dimulai dengan jatuhnya Kekaisaran Romawi Barat dan diakhiri oleh munculnya Renaisans dan Era Penjelajahan. Selama periode ini, terjadi banyak peristiwa penting yang membentuk peradaban Eropa, termasuk kebangkitan feodalisme, Kekaisaran Romawi Suci, serta konflik besar seperti Perang Salib.
+            </p>
+            <p class="left-align">
+                Salah satu ciri khas dari Abad Pertengahan adalah pengaruh besar agama dalam kehidupan sehari-hari, khususnya Gereja Katolik yang berperan penting dalam politik dan masyarakat.
+            </p>
+            <img src="https://asset-a.grid.id/crop/0x0:0x0/x/photo/2023/04/05/1jpg-20230405074540.jpg" alt="Gambar Abad Pertengahan" width="500px">
+        </section>
+
+        <section id="section2">
+            <h2 class="justify-align">Poin-Poin Penting dalam Abad Pertengahan</h2>
+            <ul class="left-align">
+                <li>Sistem feodalisme menjadi tatanan politik dan ekonomi utama pada Abad Pertengahan.</li>
+                <li>Kekaisaran Romawi Suci memainkan peran penting dalam politik dan agama di Eropa.</li>
+                <li>Perang Salib adalah serangkaian konflik antara Kekristenan dan Islam untuk merebut Tanah Suci.</li>
+                <li>Pada akhir Abad Pertengahan, Renaisans mulai muncul dengan menitikberatkan kebangkitan seni, ilmu pengetahuan, dan budaya.</li>
+            </ul>
+        </section>
+
+        <section id="section3">
+            <h2 class="right-align">Contoh Soal Abad Pertengahan</h2>
+            <p class="justify-align">
+                Jelaskan peran Gereja Katolik dalam kehidupan sosial dan politik selama Abad Pertengahan.
+            </p>
+            <pre class="example-problem">
+Jawaban:
+Gereja Katolik memiliki pengaruh besar dalam kehidupan sosial dan politik selama Abad Pertengahan. Gereja mengatur kehidupan sehari-hari, mempengaruhi pendidikan, dan sering kali menjadi kekuatan politik yang signifikan. Paus dianggap sebagai pemimpin spiritual tertinggi dan memiliki otoritas yang kuat dalam hal politik dan hukum.
+            </pre>
+        </section>
+
+        <section id="section4">
+            <h2 class="left-align">Video Pembelajaran Abad Pertengahan</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/jynJwhxWdKo?si=xOUydkZRGQKLwERb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="left-align">Video ini memberikan gambaran tentang peristiwa dan karakteristik utama Abad Pertengahan di Eropa.</p>
+        </section>
+
+        <section id="section5">
+            <h2 class="right-align">Kutipan Inspiratif tentang Abad Pertengahan</h2>
+            <blockquote>
+                "Abad Pertengahan adalah periode di mana agama, seni, dan kekuasaan saling terjalin erat, membentuk dasar peradaban Eropa modern." - Jacques Le Goff
+            </blockquote>
+        </section>
+
+        <section id="section6">
+            <h2 class="right-align">Download Materi PDF</h2>
+            <a href="https://repository.unikom.ac.id/64084/1/MASA%20ABAD%20PERTENGAHAN.pdf" class="button" download>Download PDF Abad Pertengahan</a>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Fisika - Optik</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    <script>
+        fetch("navbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar-placeholder").innerHTML = data;
+            });
+    </script>
+
+    <div class="sidebar">
+        <h3>Daftar Isi</h3>
+        <div class="content">
+            <a href="#section1">Pengertian Optik</a>
+            <a href="#section2">Poin-Poin Penting</a>
+            <a href="#section3">Contoh Soal</a>
+            <a href="#section4">Video Pembelajaran</a>
+            <a href="#section5">Kutipan Inspiratif</a>
+            <a href="#section6">Download Materi</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <h1>Fisika - Optik</h1>
+
+        <section id="section1">
+            <h2 class="justify-align">Pengertian Optik</h2>
+            <p class="left-align">
+                Optik adalah cabang fisika yang mempelajari sifat cahaya dan interaksinya dengan materi. Optik melibatkan studi tentang pembiasan, pemantulan, polarisasi, difraksi, dan berbagai fenomena lainnya yang berkaitan dengan cahaya.
+            </p>
+            <p class="left-align">
+                Studi optik sangat penting karena mencakup aplikasi yang luas, mulai dari lensa pada kacamata hingga teknologi laser dan kamera.
+            </p>
+            <img src="https://cdn1.katadata.co.id/media/images/temp/2021/09/24/Materi_Fisika_Alat_Optik_Lup-2021_09_24-14_50_55_1a27bf60807ab35d055f257b087042fa.jpg" alt="Gambar Optik" width="500px">
+        </section>
+
+        <section id="section2">
+            <h2 class="justify-align">Poin-Poin Penting dalam Optik</h2>
+            <ul class="left-align">
+                <li>Pembiasan dan pemantulan adalah dua konsep dasar dalam optik.</li>
+                <li>Hukum Snell adalah dasar dari pembiasan cahaya di antara dua media yang berbeda.</li>
+                <li>Prisma digunakan untuk memecah cahaya putih menjadi spektrum warna-warna.</li>
+                <li>Interferensi dan difraksi adalah fenomena penting yang terjadi ketika cahaya berinteraksi dengan penghalang atau celah kecil.</li>
+            </ul>
+        </section>
+
+        <section id="section3">
+            <h2 class="right-align">Contoh Soal Optik</h2>
+            <p class="justify-align">
+                Sebuah cahaya datang dengan sudut 30° terhadap normal permukaan kaca. Jika indeks bias kaca adalah 1,5, hitunglah sudut pembiasan cahaya di dalam kaca!
+            </p>
+            <pre class="example-problem">
+Diketahui:
+Sudut datang (i) = 30°
+Indeks bias kaca (n) = 1,5
+
+Gunakan hukum Snell:
+n₁ sin i = n₂ sin r
+
+1 sin 30° = 1,5 sin r
+0,5 = 1,5 sin r
+sin r = 0,33
+
+r ≈ 19,47°
+            </pre>
+        </section>
+
+        <section id="section4">
+            <h2 class="left-align">Video Pembelajaran Optik</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/p2peYvkzvgU?si=N40YPNd_QXjmu56I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+    </div>
+</body>

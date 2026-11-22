@@ -1,0 +1,271 @@
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #1f3f5b 30%, #2d5d7c 70%);
+    color: white;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    z-index: 1000;
+}
+
+
+body {
+    padding-top: 70px; 
+}
+
+
+header .web-nav a, header .user-buttons a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    background: linear-gradient(to right, #ff6f3c, #ff914d);
+}
+
+header .web-nav a:hover {
+    background: linear-gradient(to left, #d45524, #e76a45);
+}
+
+
+header .user-buttons a {
+    border: 2px solid white;
+    background-color: transparent;
+    margin-left: 15px;
+}
+
+header .user-buttons a:hover {
+    background-color: white;
+    color: #1f3f5b;
+}
+
+header .user-buttons a:active {
+    background-color: #d45524;
+    color: white;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 0; 
+    width: 100%;
+    background: linear-gradient(to right, #4a90e2, #a6d9f7); 
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 7%; 
+    left: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    border-radius: 0 0 25px 25px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+header:hover + nav, 
+nav:hover {
+    opacity: 1;
+    visibility: visible;
+    z-index: 2000;
+}
+
+
+nav .dropdown {
+    position: relative;
+    transition: all 0.4s ease;
+}
+
+
+nav .dropdown .dropbtn {
+    background: transparent;
+    color: white;
+    text-decoration: none;
+    font-size: 16px; 
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 8px 15px; 
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+nav .dropdown:hover .dropbtn {
+    filter: brightness(1.2);
+    transform: scale(1.05);
+}
+
+
+nav .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 90%; 
+    left: 0;
+    background: linear-gradient(to right, #ffaf76, #ffcc92);
+    min-width: 160px; 
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    transition: all 0.3s ease;
+    border-radius: 15px; 
+    overflow: hidden;
+}
+
+
+nav .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+nav .dropdown:hover ~ .dropdown {
+    opacity: 0.3;
+}
+
+
+nav .dropdown-content a {
+    color: #fff;
+    padding: 10px 14px; 
+    text-decoration: none;
+    display: block;
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+
+nav .dropdown-content a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transform: translateX(-50%);
+    transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+nav .dropdown-content a:hover::after {
+    width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica', sans-serif;
+}
+
+
+.biodata-container {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    width: 90%;
+    overflow: hidden;
+    padding: 20px 30px;
+    transition: transform 0.3s ease;
+}
+
+.biodata-container:hover {
+    transform: scale(1.02);
+}
+
+.header h1 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #2d5d7c; 
+}
+
+.biodata-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+.photo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fafafa;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    max-width: 250px; 
+    border-radius: 50%; 
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.photo img:hover {
+    transform: scale(1.05);
+}
+
+
+.info-container {
+    flex: 2;
+}
+
+.info {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.info th, .info td {
+    padding: 15px 20px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.info th {
+    font-weight: 700;
+    color: #2d5d7c;
+    background-color: #f8f8f8;
+}
+
+.info td {
+    color: #333;
+}
+
+.info tr:hover {
+    background-color: #f1f1f1;
+}
+
+
+@media (max-width: 768px) {
+    .biodata-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .photo, .info-container {
+        width: 100%;
+    }
+
+    .info th, .info td {
+        padding: 10px 15px;
+    }
+
+    .photo img {
+        max-width: 200px;
+    }
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Matematika - Kalkulus</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    <script>
+        fetch("navbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar-placeholder").innerHTML = data;
+            });
+    </script>
+
+    <div class="sidebar">
+        <h3>Daftar Isi</h3>
+        <div class="content">
+            <a href="#section1">Pengertian Kalkulus</a>
+            <a href="#section2">Poin-Poin Penting</a>
+            <a href="#section3">Contoh Soal</a>
+            <a href="#section4">Video Pembelajaran</a>
+            <a href="#section5">Kutipan Inspiratif</a>
+            <a href="#section6">Download Materi</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <h1>Matematika - Kalkulus</h1>
+
+        <section id="section1">
+            <h2 class="justify-align">Pengertian Kalkulus</h2>
+            <p class="left-align">
+                Kalkulus adalah cabang matematika yang berfokus pada studi perubahan dan gerak. Konsep utama dalam kalkulus mencakup turunan, integral, dan limit. Kalkulus sangat penting dalam berbagai bidang seperti fisika, ekonomi, teknik, dan biologi.
+            </p>
+            <img src="https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_640/v1634025439/01815c7a05d116d4dceeb50f7b1aed16.jpg" alt="Contoh Kalkulus" width="500px">
+        </section>
+
+        <section id="section2">
+            <h2 class="justify-align">Poin-Poin Penting dalam Kalkulus</h2>
+            <ul class="left-align">
+                <li>Kalkulus terdiri dari dua cabang utama: diferensial dan integral.</li>
+                <li>Diferensial mempelajari perubahan instan dan kecepatan.</li>
+                <li>Integral berkaitan dengan akumulasi dan pengukuran area di bawah kurva.</li>
+                <li>Limit adalah konsep dasar yang menjadi dasar dari diferensial dan integral.</li>
+            </ul>
+        </section>
+
+        <section id="section3">
+            <h2 class="right-align">Contoh Soal Kalkulus</h2>
+            <p class="justify-align">
+                Berikut adalah contoh perhitungan sederhana terkait turunan:
+            </p>
+            <pre class="example-problem">
+Diketahui f(x) = x² + 3x. Cari turunan f(x) terhadap x.
+<br><br>
+f'(x) = 2x + 3
+            </pre>
+        </section>
+
+        <section id="section4">
+            <h2 class="left-align">Video Pembelajaran Kalkulus</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/87aqpfPJdlI?si=Uc18S2pMQ4s3NFyE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="left-align">Video ini memberikan pengenalan mendalam tentang konsep dasar kalkulus dan penerapannya dalam kehidupan sehari-hari.</p>
+        </section>
+
+        <section id="section5">
+            <h2 class="right-align">Kutipan Inspiratif tentang Kalkulus</h2>
+            <blockquote>
+                "Kalkulus adalah seni membelah hal-hal menjadi bagian yang sangat kecil dan menggabungkannya lagi untuk melihat gambaran yang lebih besar." - Isaac Newton
+            </blockquote>
+        </section>
+
+        <section id="section6">
+            <h2 class="right-align">Download Materi PDF</h2>
+            <a href="https://dirdosen.budiluhur.ac.id/0329057301/MI028-Kalkulus%201.pdf" class="button" download>Download PDF Kalkulus</a>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

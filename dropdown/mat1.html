@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Matematika - Aljabar</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    <script>
+        fetch("navbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar-placeholder").innerHTML = data;
+            });
+    </script>
+
+    <div class="sidebar">
+        <h3>Daftar Isi</h3>
+        <div class="content">
+            <a href="#section1">Pengertian Aljabar</a>
+            <a href="#section2">Poin-Poin Penting</a>
+            <a href="#section3">Contoh Soal</a>
+            <a href="#section4">Video Pembelajaran</a>
+            <a href="#section5">Kutipan Inspiratif</a>
+            <a href="#section6">Download Materi</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <h1>Matematika - Aljabar</h1>
+
+        <section id="section1">
+            <h2 class="justify-align">Pengertian Aljabar</h2>
+            <p class="left-align">
+                Aljabar adalah cabang matematika yang mempelajari simbol-simbol dan aturan-aturan untuk memanipulasi simbol-simbol tersebut. Dalam aljabar, kita menggunakan huruf-huruf sebagai pengganti bilangan, yang memungkinkan kita untuk menulis persamaan dan menyelesaikannya secara simbolis.
+            </p>
+            <img src="https://cdn-web.ruangguru.com/landing-pages/assets/hs/Screen%20Shot%202018-04-17%20at%2014.03.41.png" alt="Contoh Aljabar" width="500px">
+        </section>
+
+        <section id="section2">
+            <h2 class="justify-align">Poin-Poin Penting dalam Aljabar</h2>
+            <ul class="left-align">
+                <li>Aljabar mencakup pemahaman dan manipulasi persamaan dan fungsi.</li>
+                <li>Persamaan linear dan kuadrat adalah dasar dalam aljabar.</li>
+                <li>Pemahaman tentang variabel dan koefisien penting dalam menyelesaikan persamaan.</li>
+                <li>Aljabar membantu kita memahami konsep dasar fungsi, polinomial, dan grafik.</li>
+            </ul>
+        </section>
+
+        <section id="section3">
+            <h2 class="right-align">Contoh Soal Aljabar</h2>
+            <p class="justify-align">
+                Berikut adalah contoh perhitungan sederhana terkait persamaan linear:
+            </p>
+            <pre class="example-problem">
+Diketahui persamaan 2x + 3 = 7. Cari nilai x.
+<br><br>
+2x = 7 - 3
+<br>
+2x = 4
+<br>
+x = 2
+            </pre>
+        </section>
+
+        <section id="section4">
+            <h2 class="left-align">Video Pembelajaran Aljabar</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/eW7LZDdXhLo?si=0RYp9gQXOAPpC-L7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="left-align">Video ini memberikan pengenalan mendalam tentang konsep dasar aljabar dan penerapannya dalam kehidupan sehari-hari.</p>
+        </section>
+
+        <section id="section5">
+            <h2 class="right-align">Kutipan Inspiratif tentang Aljabar</h2>
+            <blockquote>
+                "Aljabar adalah bahasa universal matematika, yang memungkinkan kita mengubah situasi dunia nyata menjadi model matematis yang dapat diselesaikan." - David Hilbert
+            </blockquote>
+        </section>
+
+        <section id="section6">
+            <h2 class="right-align">Download Materi PDF</h2>
+            <a href="https://cdn-gbelajar.simpkb.id/s3/p3k/Matematika/Per%20Pembelajaran/Matematika%20-%20PB2.pdf" class="button" download>Download PDF Aljabar</a>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

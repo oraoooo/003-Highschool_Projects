@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PKN - Dasar-dasar PKN</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    <script>
+        fetch("navbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar-placeholder").innerHTML = data;
+            });
+    </script>
+
+    <div class="sidebar">
+        <h3>Daftar Isi</h3>
+        <div class="content">
+            <a href="#section1">Pengertian Dasar-dasar PKN</a>
+            <a href="#section2">Poin-Poin Penting</a>
+            <a href="#section3">Contoh Soal</a>
+            <a href="#section4">Video Pembelajaran</a>
+            <a href="#section5">Kutipan Inspiratif</a>
+            <a href="#section6">Download Materi</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <h1>PKN - Dasar-dasar PKN</h1>
+
+        <section id="section1">
+            <h2 class="justify-align">Pengertian Dasar-dasar PKN</h2>
+            <p class="left-align">
+                Dasar-dasar Pendidikan Kewarganegaraan (PKN) mencakup konsep dasar tentang kewarganegaraan, demokrasi, hak asasi manusia, dan kesadaran hukum. Mata pelajaran ini mengajarkan peserta didik untuk memahami peran mereka sebagai warga negara yang baik dan bertanggung jawab serta bagaimana berkontribusi dalam masyarakat.
+            </p>
+            <p class="left-align">
+                Dengan mempelajari dasar-dasar PKN, peserta didik diharapkan mampu mengembangkan kesadaran hukum dan sosial serta memahami pentingnya partisipasi aktif dalam kehidupan berbangsa dan bernegara.
+            </p>
+            <img src="https://lh5.googleusercontent.com/proxy/IPYbq6bT_CRs2le-uPHKjDP8tX0dNd5-F_JhlQVjYIFiER6iA-o9BB4opOUEQ36Of_3fy6Wu-ed2NJPacWFKFI3DORfJXRYpvdR6Dp2EbdJhY27XvF3-YNSCUw" alt="Gambar Dasar-dasar PKN" width="500px">
+        </section>
+
+        <section id="section2">
+            <h2 class="justify-align">Poin-Poin Penting dalam Dasar-dasar PKN</h2>
+            <ul class="left-align">
+                <li>Pemahaman tentang hak dan kewajiban sebagai warga negara.</li>
+                <li>Prinsip-prinsip demokrasi dan peran masyarakat dalam pemerintahan.</li>
+                <li>Pentingnya kesadaran hukum dan aturan dalam kehidupan sehari-hari.</li>
+                <li>Pentingnya menghormati hak asasi manusia dan menjunjung tinggi keadilan sosial.</li>
+            </ul>
+        </section>
+
+        <section id="section3">
+            <h2 class="right-align">Contoh Soal Dasar-dasar PKN</h2>
+            <p class="justify-align">
+                Apa perbedaan antara hak asasi manusia dan kewajiban warga negara dalam konteks hukum dan sosial?
+            </p>
+            <pre class="example-problem">
+Jawaban:
+Hak asasi manusia adalah hak dasar yang dimiliki oleh setiap individu tanpa kecuali, seperti hak atas kehidupan, kebebasan berpendapat, dan kebebasan beragama. Kewajiban warga negara, di sisi lain, adalah tanggung jawab yang harus dilakukan oleh setiap individu dalam masyarakat, seperti mematuhi hukum, membayar pajak, dan menjaga ketertiban umum.
+            </pre>
+        </section>
+
+        <section id="section4">
+            <h2 class="left-align">Video Pembelajaran Dasar-dasar PKN</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/F3iWNSTyGXM?si=s3adMRsUYiuAiNtJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="left-align">Video ini menjelaskan konsep dasar PKN, termasuk hak dan kewajiban warga negara serta prinsip-prinsip demokrasi.</p>
+        </section>
+
+        <section id="section5">
+            <h2 class="right-align">Kutipan Inspiratif tentang Dasar-dasar PKN</h2>
+            <blockquote>
+                "Kewarganegaraan yang baik adalah kewajiban kita untuk memahami dan melaksanakan hak kita dengan penuh tanggung jawab." - Nelson Mandela
+            </blockquote>
+        </section>
+
+        <section id="section6">
+            <h2 class="right-align">Download Materi PDF</h2>
+            <a href="https://cdn-gbelajar.simpkb.id/s3/p3k/PGSD/PPKN/Modul%20Pembelajaran/PPKn_Pembelajaran-1.pdf" class="button" download>Download PDF Dasar-dasar PKN</a>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

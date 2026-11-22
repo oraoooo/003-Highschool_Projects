@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Matematika - Geometri</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet"> <!-- Importing Google Font -->
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    <script>
+        fetch("navbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar-placeholder").innerHTML = data;
+            });
+    </script>
+
+    <div class="sidebar">
+        <h3>Daftar Isi</h3>
+        <div class="content">
+            <a href="#section1">Pengertian Geometri</a>
+            <a href="#section2">Poin-Poin Penting</a>
+            <a href="#section3">Contoh Soal</a>
+            <a href="#section4">Video Pembelajaran</a>
+            <a href="#section5">Kutipan Inspiratif</a>
+            <a href="#section6">Download Materi</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1>Matematika - Geometri</h1>
+
+        <section id="section1">
+            <h2 class="justify-align">Pengertian Geometri</h2>
+            <p class="left-align">
+                Geometri adalah cabang matematika yang mempelajari tentang sifat-sifat ruang dan hubungan antara titik, garis, sudut, permukaan, dan bentuk-bentuk tiga dimensi. Dalam geometri, kita mempelajari berbagai konsep dasar seperti titik, garis, sudut, dan bentuk-bentuk geometris seperti lingkaran, segitiga, persegi, serta konsep yang lebih kompleks seperti volume dan area dari objek tiga dimensi.
+            </p>
+            <p class="left-align">
+                Pengertian geometri berkembang seiring dengan waktu, dari konsep sederhana hingga studi tentang ruang dimensi yang kompleks. Melalui geometri, kita belajar bagaimana mengukur, memahami, dan menggambarkan dunia di sekitar kita.
+            </p>
+            <img src="https://cdn.idntimes.com/content-images/post/20211029/rumus-lingkaran-1ad154b0b943bfb8df67cd8546ef8cf8_600x400.jpg" alt="Lingkaran Geometri" width="500px">
+        </section>
+
+        <section id="section2">
+            <h2 class="justify-align">Poin-Poin Penting dalam Geometri</h2>
+            <ul class="left-align">
+                <li>Geometri berfokus pada studi tentang bentuk dua dan tiga dimensi.</li>
+                <li>Konsep utama dalam geometri meliputi titik, garis, sudut, dan bentuk geometris.</li>
+                <li>Geometri mencakup pengukuran panjang, luas, volume, dan hubungan antar bentuk.</li>
+                <li>Teorema terkenal seperti Teorema Pythagoras sangat fundamental dalam geometri.</li>
+                <li>Geometri juga melibatkan konsep transformasi seperti translasi, rotasi, dan refleksi.</li>
+            </ul>
+        </section>
+
+        <section id="section3">
+            <h2 class="right-align">Contoh Soal Geometri</h2>
+            <p class="justify-align">
+                Berikut adalah contoh perhitungan sederhana terkait luas lingkaran:
+            </p>
+            <pre class="example-problem">
+Diketahui sebuah lingkaran dengan jari-jari 7 cm. Hitung luas lingkaran tersebut!
+<br><br>
+Luas Lingkaran = π × r²
+<br>
+Luas = π × 7²
+<br>
+Luas = π × 49 = 153.94 cm²
+            </pre>
+            <img src="https://mediaindonesia.com/cdn-cgi/image/width=800,quality=80,format=webp/https://asset.mediaindonesia.com/news/2023/05/1fc0dde00f71a6661a40385a8795b2cb.jpeg" alt="Contoh Soal Geometri" width="400px">
+        </section>
+
+        <section id="section4">
+            <h2 class="left-align">Video Pembelajaran Geometri</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/vulyqB7DTXA?si=yA9LumquJ8JNO6Cf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="left-align">Video ini memberikan pengenalan mendalam tentang konsep dasar geometri dan penerapannya dalam kehidupan sehari-hari.</p>
+        </section>
+
+        <section id="section5">
+            <h2 class="right-align">Kutipan Inspiratif tentang Geometri</h2>
+            <blockquote>
+                "Geometri memiliki dua harta karun: teorema Pythagoras dan rasio emas. Yang pertama adalah perhiasan intelektual yang tak ternilai, sementara yang kedua adalah mahakarya seni yang mengagumkan." - Johannes Kepler
+            </blockquote>
+        </section>
+
+        <section id="section6">
+            <h2 class="right-align">Download Materi PDF</h2>
+            <a href="https://www.academia.edu/37835197/Geometri_Bidang_Lingkaran" class="button" download>Download PDF Geometri</a>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sejarah - Sejarah Modern</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    <script>
+        fetch("navbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar-placeholder").innerHTML = data;
+            });
+    </script>
+
+    <div class="sidebar">
+        <h3>Daftar Isi</h3>
+        <div class="content">
+            <a href="#section1">Pengertian Sejarah Modern</a>
+            <a href="#section2">Poin-Poin Penting</a>
+            <a href="#section3">Contoh Soal</a>
+            <a href="#section4">Video Pembelajaran</a>
+            <a href="#section5">Kutipan Inspiratif</a>
+            <a href="#section6">Download Materi</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <h1>Sejarah - Sejarah Modern</h1>
+
+        <section id="section1">
+            <h2 class="justify-align">Pengertian Sejarah Modern</h2>
+            <p class="left-align">
+                Sejarah Modern adalah periode sejarah yang dimulai dari akhir Abad Pertengahan hingga saat ini. Periode ini mencakup perubahan besar di berbagai bidang, seperti penemuan teknologi, revolusi industri, perang dunia, dan perkembangan ideologi modern. Sejarah modern juga menyaksikan perkembangan bangsa-bangsa baru dan kolapsnya kekaisaran besar.
+            </p>
+            <p class="left-align">
+                Perubahan-perubahan di era modern membawa pengaruh besar terhadap politik, ekonomi, dan budaya di seluruh dunia. Kemajuan teknologi seperti mesin uap, listrik, dan internet juga mengubah cara manusia berinteraksi dan mengelola kehidupan sehari-hari.
+            </p>
+            <img src="https://cdn.idntimes.com/content-images/community/2020/02/libertad-delacroix-c4f36b00b754b554be7dd1f1ea788081_600x400.jpg" alt="Gambar Sejarah Modern" width="500px">
+        </section>
+
+        <section id="section2">
+            <h2 class="justify-align">Poin-Poin Penting dalam Sejarah Modern</h2>
+            <ul class="left-align">
+                <li>Revolusi Industri mengubah cara produksi dan masyarakat pada akhir abad ke-18 hingga ke-19.</li>
+                <li>Kedua Perang Dunia menjadi peristiwa penting yang membentuk dunia modern.</li>
+                <li>Perang Dingin adalah periode ketegangan politik dan militer antara Blok Barat dan Blok Timur setelah Perang Dunia II.</li>
+                <li>Globalisasi menjadi ciri khas dari abad ke-20 hingga saat ini, ditandai dengan saling ketergantungan antarbangsa.</li>
+            </ul>
+        </section>
+
+        <section id="section3">
+            <h2 class="right-align">Contoh Soal Sejarah Modern</h2>
+            <p class="justify-align">
+                Apa dampak Revolusi Industri terhadap masyarakat dan ekonomi di Eropa?
+            </p>
+            <pre class="example-problem">
+Jawaban:
+Revolusi Industri membawa perubahan besar dalam cara produksi, dari tenaga manusia menjadi tenaga mesin. Hal ini meningkatkan efisiensi dan produktivitas. Di sisi lain, Revolusi Industri menyebabkan urbanisasi besar-besaran, munculnya kelas pekerja, dan masalah sosial seperti kemiskinan dan kondisi kerja yang buruk.
+            </pre>
+        </section>
+
+        <section id="section4">
+            <h2 class="left-align">Video Pembelajaran Sejarah Modern</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/C6DZAGxczBM?si=ArlvBWpLi1fndwYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="left-align">Video ini memberikan gambaran tentang peristiwa utama dalam sejarah modern dan dampaknya terhadap masyarakat saat ini.</p>
+        </section>
+
+        <section id="section5">
+            <h2 class="right-align">Kutipan Inspiratif tentang Sejarah Modern</h2>
+            <blockquote>
+                "Sejarah modern adalah cermin bagi masyarakat saat ini, memperlihatkan perjalanan panjang umat manusia menuju masa depan." - E. H. Carr
+            </blockquote>
+        </section>
+
+        <section id="section6">
+            <h2 class="right-align">Download Materi PDF</h2>
+            <a href="https://bpsdm.kemendagri.go.id/Assets/Uploads/laporan/bc53b1ff33e1f19a400893214c432bd6.pdf" class="button" download>Download PDF Sejarah Modern</a>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
